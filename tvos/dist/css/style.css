@@ -1201,8 +1201,8 @@ label {
 	right: 0;
 	top: 0;
 	bottom: -300px;
-	background: #8179f2;
-	background: linear-gradient(to bottom, #665DF0 0, #9B95F3 100%)
+  background: #6d8374;
+  background: linear-gradient(to bottom, #6d8374 0, #181e1d 100%);
 }
 .hero-illustration img,
 .hero-illustration svg {
