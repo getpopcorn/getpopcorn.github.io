@@ -33,12 +33,13 @@
 
 
 .getButton {
-  background-color: #6d8374;
+  transition-duration: 0.33s;
+  background-color: #3e67a5;
 }
 
 .getButton:hover {
   transition-duration: 0.33s;
-  background-color: #435149;
+  background-color: #253B63;
 }
 
 
@@ -1186,7 +1187,7 @@ label {
 		width: 9999px;
 		height: 100vh;
 		background: #6d8374;
-		background: linear-gradient(to bottom, #6d8374 0, #181e1d 100%);
+		background: linear-gradient(to bottom, #3e67a5 0, #0c0f20 100%);
 		background-repeat: no-repeat
 	}
 }
@@ -1226,7 +1227,7 @@ label {
 	top: 0;
 	bottom: -300px;
   background: #6d8374;
-  background: linear-gradient(to bottom, #6d8374 0, #181e1d 100%);
+  background: linear-gradient(to bottom, #3e67a5 0, #0c0f20 100%);
 }
 .hero-illustration img,
 .hero-illustration svg {
