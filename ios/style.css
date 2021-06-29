@@ -183,6 +183,10 @@ small { font-size: var(--ui-typography-s); }
   line-height: 1;
 }
 
+.ui-text-intro-subtitle {
+  color: var(--ui-color-typography-note);
+}
+
 /*--------------------------------------------------------------
 4.0 IMAGE
 --------------------------------------------------------------*/
