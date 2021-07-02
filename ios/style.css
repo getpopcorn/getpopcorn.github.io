@@ -233,11 +233,6 @@ svg {
   flex-direction: row;
 }
 
-.ui-component-cta-column {
-  flex-direction: column;
-  row-gap: var(--ui-gap-cta);
-}
-
 /*--------------------------------------------------------------
 |
 | 6.2 BUTTON
