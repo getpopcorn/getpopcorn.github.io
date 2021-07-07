@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="uisual" content="Made with Uisual (uisual.com)">
+    <meta name="author" content="#">
+    <meta name="description" content="#">
+    <meta name="referrer" content="unsafe-url">
+    <meta name="robots" content="index, follow">
+    <!-- SPEED -->
+    <link rel="preconnect" href="https://res.cloudinary.com">
+    <link rel="dns-prefetch" href="https://res.cloudinary.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <!-- LINK -->
+    <link rel="me" href="#">
+    <link rel="canonical" href="#">
+    <link rel="icon" type="image/png" href="#" sizes="48x48">
+    <!-- PERFORMANCE -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    <link rel="preload" as="style" href="style.css">
+    <link rel="stylesheet" href="style.css">
+
+
+    <script src="https://kit.fontawesome.com/8c8cb8d927.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      function calcTime(offset) {
+        var d = new Date();
+        var utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+
+        var nd = new Date(utc + (3600000*offset));
+        return nd;
+      }
+
+      function formatAMPM(date) {
+        var hours = date.getHours();
+        var minutes = date.getMinutes();
+        var ampm = hours >= 12 ? 'pm' : 'am';
+        hours = hours % 12;
+        hours = hours ? hours : 12; // the hour '0' should be '12'
+        minutes = minutes < 10 ? '0'+ minutes : minutes;
+        var strTime = hours + ':' + minutes + ' ' + ampm;
+        return strTime;
+      }
+
+      function getTime() {
+        document.getElementById("time").innerHTML = "It's " + formatAMPM(calcTime("+8")) + " in Perth, Australia right now. I'm too tired to make the changelog. Check back here when it's like 8-9am, maybe.";
+      }
+    </script>
+    <!-- TITLE -->
+    <title>Popcorn | iOS</title>
+  </head>
+  <body onload="window.setInterval(getTime, 1000)">
+    <header role="banner" class="ui-section-header">
+      <div class="ui-layout-container">
+        <div class="ui-section-header__layout ui-layout-flex">
+          <!-- LOGO -->
+          <a href="#" role="link" aria-label="#">
+            <svg viewBox="0 0 18 18" height="18" width="18" role="img" aria-label="#">
+              <path fill="#353535" d="M0 0h4.5v9a4.5 4.5 0 109 0V6H18v3A9 9 0 110 9V0zm18 4.5V0h-4.5v4.5H18z"/>
+            </svg>
+          </a>
+          <a href="https://twitter.com/_getpopcorn" role="link" aria-label="#">
+            <svg viewBox="0 0 24 24" height="18" width="18" fill="none" stroke="#353535" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" role="img" aria-label="#">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main role="main">
+      <section class="ui-section-hero">
+        <div class="ui-layout-container">
+          <!-- COPYWRITING -->
+          <div class="ui-layout-column-6 ui-layout-column-center">
+            <h1>Changelog</h1>
+            <p class="ui-text-intro" id="time"></p>
+            <!-- CTA -->
+            <div class="ui-component-cta ui-layout-flex">
+              <!-- APP STORE -->
+              <a href="https://patreon.com/getpopcorn" role="link" aria-label="#" class="ui-component-button ui-component-button-normal ui-component-button-primary ui-component-button-icon">
+                <i class="fab fa-patreon" style="font-size: 16px"></i>
+                <span>Patreon</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer role="contentinfo" class="ui-section-footer">
+      <div class="ui-layout-container">
+        <div class="ui-section-footer__layout ui-layout-flex">
+          <!-- COPYRIGHT -->
+          <p class="ui-section-footer--copyright ui-text-note"><small>&copy; 2021 Popcorn</small></p>
+          <!-- MENU -->
+          <a href="#" role="link" aria-label="#" class="ui-text-note"><small>Features</small></a>
+          <a href="#" role="link" aria-label="#" class="ui-text-note"><small>Help</small></a>
+          <a href="#" role="link" aria-label="#" class="ui-text-note"><small>Terms</small></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
