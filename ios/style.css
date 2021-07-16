@@ -29,6 +29,19 @@ TABLE OF CONTENT
 1.0 VARIABLE
 --------------------------------------------------------------*/
 
+
+@font-face {
+font-family: 'SF';
+src: url('SF-Pro-Display-Regular.otf');
+font-weight: 400;
+}
+
+@font-face {
+font-family: 'SF';
+src: url('SF-Pro-Display-Bold.otf');
+font-weight: 700;
+}
+
 :root {
 
   /*------------------------------------------------------------
@@ -37,9 +50,16 @@ TABLE OF CONTENT
   |
   ------------------------------------------------------------*/
 
-  --ui-color-brand: #353535;
+--ui-color-brand: #1c1c1eff;
 
   /* COLOR PALETTE */
+--ui-color-dark-mode-background: #000000ff;
+--ui-color-dark-mode-secondary-background: #1c1c1eff;
+
+--ui-color-dark-mode-label: #ffffffff;
+--ui-color-dark-mode-secondary-label: #ebebf599;
+
+
 
   --ui-color-n-000: #fff;
   --ui-color-n-050: #f5f5f5;
@@ -51,15 +71,15 @@ TABLE OF CONTENT
 
   /* BACKGROUND COLOR */
 
-  --ui-color-background-primary  : var(--ui-color-n-000);
-  --ui-color-background-secondary: var(--ui-color-n-050);
+  --ui-color-background-primary  : var(--ui-color-dark-mode-background);
+  --ui-color-background-secondary: var(--ui-color-dark-mode-secondary-background);
 
   /* TYPOGRAPHY COLOR */
 
-  --ui-color-typography-heading: var(--ui-color-n-500);
-  --ui-color-typography-body   : var(--ui-color-n-900);
-  --ui-color-typography-note   : var(--ui-color-n-300);
-  --ui-color-typography-button : var(--ui-color-n-000);
+  --ui-color-typography-heading: var(--ui-color-dark-mode-label);
+  --ui-color-typography-body   : var(--ui-color-dark-mode-secondary-label);
+  --ui-color-typography-note   : var(--ui-color-dark-mode-label);
+  --ui-color-typography-button : var(--ui-color-dark-mode-label);
 
   /*------------------------------------------------------------
   |
@@ -67,8 +87,7 @@ TABLE OF CONTENT
   |
   ------------------------------------------------------------*/
 
-  --ui-typography-typeface: "Inter", sans-serif;
-
+  --ui-typography-typeface: SF, sans-serif;
   /* FONT SIZE */
 
   --ui-typography-h1: 1.9375rem;
