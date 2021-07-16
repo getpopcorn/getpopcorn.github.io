@@ -29,7 +29,6 @@ TABLE OF CONTENT
 1.0 VARIABLE
 --------------------------------------------------------------*/
 
-
 @font-face {
 font-family: 'SF';
 src: url('SF-Pro-Display-Regular.otf');
@@ -440,6 +439,12 @@ svg {
   .ui-layout-column-center {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .ui-layout-grid-1 {
+    column-gap: var(--ui-layout-gutter);
+    grid-template-columns: repeat(1, 0.48572fr);
+    justify-items: center;
   }
 
   .ui-layout-grid-2 {

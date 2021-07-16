@@ -21,51 +21,24 @@
     <link rel="canonical" href="#">
     <link rel="icon" type="image/png" href="#" sizes="48x48">
     <!-- PERFORMANCE -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
     <link rel="preload" as="style" href="ios/style.css">
     <link rel="stylesheet" href="ios/style.css">
 
-
-    <script src="https://kit.fontawesome.com/8c8cb8d927.js" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-      function calcTime(offset) {
-        var d = new Date();
-        var utc = d.getTime() + (d.getTimezoneOffset() * 60000);
-
-        var nd = new Date(utc + (3600000*offset));
-        return nd;
-      }
-
-      function formatAMPM(date) {
-        var hours = date.getHours();
-        var minutes = date.getMinutes();
-        var ampm = hours >= 12 ? 'pm' : 'am';
-        hours = hours % 12;
-        hours = hours ? hours : 12; // the hour '0' should be '12'
-        minutes = minutes < 10 ? '0'+ minutes : minutes;
-        var strTime = hours + ':' + minutes + ' ' + ampm;
-        return strTime;
-      }
-
-      function getTime() {
-        document.getElementById("time").innerHTML = "It's " + formatAMPM(calcTime("+8")) + " in Perth, Australia right now. I'm too tired to make the changelog. Check back here when it's like 8-9am, maybe.";
-      }
-    </script>
     <!-- TITLE -->
-    <title>Popcorn | iOS</title>
+    <title>Popcorn | Status</title>
   </head>
-  <body onload="window.setInterval(getTime, 1000)">
+  <body>
     <header role="banner" class="ui-section-header">
       <div class="ui-layout-container">
         <div class="ui-section-header__layout ui-layout-flex">
           <!-- LOGO -->
           <a href="#" role="link" aria-label="#">
             <svg viewBox="0 0 18 18" height="18" width="18" role="img" aria-label="#">
-              <path fill="#353535" d="M0 0h4.5v9a4.5 4.5 0 109 0V6H18v3A9 9 0 110 9V0zm18 4.5V0h-4.5v4.5H18z"/>
+              <path fill="#ffffffff" d="M0 0h4.5v9a4.5 4.5 0 109 0V6H18v3A9 9 0 110 9V0zm18 4.5V0h-4.5v4.5H18z"/>
             </svg>
           </a>
           <a href="https://twitter.com/_getpopcorn" role="link" aria-label="#">
-            <svg viewBox="0 0 24 24" height="18" width="18" fill="none" stroke="#353535" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" role="img" aria-label="#">
+            <svg viewBox="0 0 24 24" height="18" width="18" fill="none" stroke="#ffffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" role="img" aria-label="#">
               <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
             </svg>
           </a>
@@ -77,14 +50,43 @@
         <div class="ui-layout-container">
           <!-- COPYWRITING -->
           <div class="ui-layout-column-6 ui-layout-column-center">
-            <h1>Changelog</h1>
-            <p class="ui-text-intro" id="time"></p>
+            <h1>Popcorn</h1>
+            <p class="ui-text-intro">The best torrenting app for iOS</p>
+          </div>
+        </div>
+      </section>
+      <section class="ui-section-feature">
+        <div class="ui-layout-container">
+          <!-- FEATURE -->
+          <div class="ui-section-feature__layout ui-layout-grid ui-layout-grid-1">
+            <div class="ui-component-card">
+              <div class="ui-component-card--info">
+                <h3>Onboarding</h3>
+                <p class="ui-text-intro">Onboarding is made up of 3 controllers, OBViewController, OBLoginViewController and OBRegisterViewController. These controllers appear when first launching v4 of Popcorn and are used to log in or register an account and device.</p>
+                <h3>Progress</h3>
+                <progress value="0.025" max="1" style="appearance: none; border: none; border-radius: 4px; overflow: hidden; width: 66%; height: 8px;"></progress>
+              </div>
+              <img src="https://res.cloudinary.com/uisual/image/upload/assets/devices/iphone-t.png" loading="lazy" alt="#">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ui-section-close">
+        <div class="ui-layout-container">
+          <div class="ui-layout-column-6 ui-layout-column-center">
+            <!-- LOGO -->
+            <svg viewBox="0 0 48 48" height="48" width="48" class="ui-section-close--logo">
+              <rect fill="#1c1c1eff" height="48" width="48" rx="8"/>
+              <path fill="#ffffffff" d="M12 13h6v12a6 6 0 0012 0v-4h6v4c0 6.627-5.373 12-12 12s-12-5.373-12-12V13zm24 6v-6h-6v6h6z"/>
+            </svg>
+            <!-- COPYWRITING -->
+            <h2>Get Popcorn on Gumroad</h2>
+            <p class="ui-text-intro">Starting from $4.99 a month for iOS</p>
             <!-- CTA -->
             <div class="ui-component-cta ui-layout-flex">
               <!-- APP STORE -->
-              <a href="https://patreon.com/getpopcorn" role="link" aria-label="#" class="ui-component-button ui-component-button-normal ui-component-button-primary ui-component-button-icon">
-                <i class="fab fa-patreon" style="font-size: 16px"></i>
-                <span>Patreon</span>
+              <a href="https://antiquecodes.gumroad.com/l/cRRzy" role="link" aria-label="#" class="ui-component-button ui-component-button-normal ui-component-button-primary ui-component-button-icon">
+                <span>Gumroad</span>
               </a>
             </div>
           </div>
